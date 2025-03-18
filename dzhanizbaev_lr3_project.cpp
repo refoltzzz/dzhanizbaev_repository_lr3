@@ -5,42 +5,54 @@ using namespace std;
 
 int check(string str = "", int minx = INT_MIN, int maxx = INT_MAX) 
 {
-    int x = 0;
+    int x;
     cout << str << endl;
-    cin >> x;
-    while (cin.fail() || x < minx || x > maxx) 
+    while (!(cin >> x) || x < minx || x > maxx) 
     {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "error" << endl;
+        cout << "Ошибка! Повторите ввод." << endl;
         cout << str << endl;
-        cin >> x;
     }
     return x;
 }
 
-double A()
+void A()
 {
-    char bukva;
-    cout << "vvedite bukvu A ";
-    cin >> bukva;
-    cout << "vi vveli " << bukva << endl;
-    return bukva;
+    char bukvaA;
+    cout << "vvedite bukvu A: ";
+    cin >> bukvaA;
+    if (bukvaA == 'A')
+        cout << "vi vveli: " << bukvaA << endl;
+    else
+        cout << "neverno. vvedite zaglavnyu bukvu A" << endl;
 }
 
 void B()
 {
-    
+    char bukvaB;
+    cout << "vvedite bukvu B: ";
+    cin >> bukvaB;
+    if (bukvaB == 'B')
+        cout << "vi vveli: " << bukvaB << endl;
+    else
+        cout << "neverno. vvedite zaglavnyu bukvu B" << endl;
 }
 
 void slozhenie()
-{
-
+{   
+    int num1 = check("vvedite pervoe chislo: ");
+    int num2 = check("vvedite vtoroe chislo: ");
+    int result = num1 + num2;
+    cout << "summa: " << result << endl;
 }
 
 void vichitanie()
 {
-
+    int num1 = check("vvedite pervoe chislo: ");
+    int num2 = check("vvedite vtoroe chislo: ");
+    int result = num1 - num2;
+    cout << "raznost: " << result << endl;
 }
 
 int main() 
