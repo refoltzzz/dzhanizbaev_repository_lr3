@@ -21,20 +21,23 @@ int check(string str = "", int minx = INT_MIN, int maxx = INT_MAX)
 
 double A()
 {
-
+   double A;
+   cout << "A" << endl; 
+   cin >> A ;
+   return A;
 }
 
-double B()
+void B()
 {
 
 }
 
-double slozhenie()
+void slozhenie()
 {
 
 }
 
-double vichitanie()
+void vichitanie()
 {
 
 }
