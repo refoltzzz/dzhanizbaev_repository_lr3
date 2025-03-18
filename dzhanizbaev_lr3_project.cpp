@@ -21,15 +21,16 @@ int check(string str = "", int minx = INT_MIN, int maxx = INT_MAX)
 
 double A()
 {
-   double A;
-   cout << "A" << endl; 
-   cin >> A ;
-   return A;
+    char bukva;
+    cout << "vvedite bukvu A ";
+    cin >> bukva;
+    cout << "vi vveli " << bukva << endl;
+    return bukva;
 }
 
 void B()
 {
-
+    
 }
 
 void slozhenie()
