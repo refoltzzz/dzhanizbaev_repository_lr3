@@ -11,7 +11,7 @@ int check(string str = "", int minx = INT_MIN, int maxx = INT_MAX)
     {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "Ошибка! Повторите ввод." << endl;
+        cout << "neverno vvedite zanovo" << endl;
         cout << str << endl;
     }
     return x;
